@@ -1,0 +1,55 @@
+{
+  "dreams": [
+    {
+      "id": "12dn21b2be2j1n2j1",
+      "name": "Carro Zero",
+      "investment": {
+        "time": 90,
+        "title": "CDB (114% cdi)",
+        "total": 1500
+      },
+      "challenge": "Adicione R$ 300,00 até quinta-feira e reduza o tempo de sua conquista em até 20 dias",
+      "progress": [
+        { "progress": 20, "state": "REACHED" },
+        { "progress": 100, "state": "REACHED" },
+        { "progress": 200, "state": "REACHED" },
+        { "progress": 300, "state": "WAITING" },
+        { "progress": 450, "state": "WAITING" }
+      ]
+    },
+    {
+      "id": "k2dg21322e2j1n2j1",
+      "name": "Viagem (gramado)",
+      "investment": {
+        "time": 180,
+        "title": "LCA (108% cdi)",
+        "total": 500
+      },
+      "challenge": "Adicione R$ 150,00 até sexta-feira e reduza o tempo de sua conquista em até 20 dias",
+      "progress": [
+        { "progress": 20, "state": "REACHED" },
+        { "progress": 40, "state": "WAITING" },
+        { "progress": 60, "state": "WAITING" },
+        { "progress": 80, "state": "WAITING" },
+        { "progress": 100, "state": "WAITING" }
+      ]
+    },
+    {
+      "id": "1jdn21b2beaj1nvjl",
+      "name": "Moto CB 300",
+      "investment": {
+        "time": 650,
+        "title": "LCA (110% cdi)",
+        "total": 200
+      },
+      "challenge": "Adicione R$ 100,00 até este sabádo e reduza o tempo de sua conquista em até 10 dias",
+      "progress": [
+        { "progress": 20, "state": "REACHED" },
+        { "progress": 80, "state": "REACHED" },
+        { "progress": 180, "state": "REACHED" },
+        { "progress": 240, "state": "REACHED" },
+        { "progress": 300, "state": "REACHED" }
+      ]
+    }
+  ]
+}
