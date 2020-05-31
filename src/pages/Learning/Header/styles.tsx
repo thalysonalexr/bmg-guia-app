@@ -12,6 +12,7 @@ export default StyleSheet.create({
   cloud: {
     width: 150,
     height: 82,
+    resizeMode: 'contain',
   },
   cloudContent: {
     fontSize: 10,

@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppLoading } from 'expo';
 import { useFonts } from '@use-expo/font';
-import { View, Text, ImageBackground } from 'react-native';
+import { View, Text, ImageBackground, Image } from 'react-native';
 
 import styles from './styles';
 
@@ -33,18 +33,10 @@ const Header: React.FC<Props> = ({ progress }) => {
           </Text>
         </ImageBackground>
       </View>
-      <ImageBackground
+      <Image
         source={require('../../../../assets/cloud.png')}
-        imageStyle={{
-          resizeMode: 'contain',
-          height: 82,
-        }}
         style={styles.cloud}
-      >
-        <Text style={[styles.cloudContent, { fontFamily: 'Comfortaa-Bold' }]}>
-          Seu sonho possui este investimento!
-        </Text>
-      </ImageBackground>
+      />
     </View>
   );
 };
