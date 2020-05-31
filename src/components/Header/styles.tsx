@@ -1,24 +1,32 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 
 export default StyleSheet.create({
   header: {
-    paddingBottom: 20,
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: '7%',
+    padding: '7%',
     width: '100%',
     justifyContent: 'space-between',
   },
   avatar: {
-    width: 52,
-    height: 52,
+    width: Dimensions.get('window').width > 500 ? 60 : 52,
+    height: Dimensions.get('window').width > 500 ? 60 : 52,
     borderRadius: 52,
     marginRight: 10,
   },
-  info: {},
+  info: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
   buttonPrevious: {
-    width: 42,
-    height: 42,
+    width: Dimensions.get('window').width > 500 ? 52 : 42,
+    height: Dimensions.get('window').width > 500 ? 52 : 42,
     alignSelf: 'flex-end',
+  },
+  name: {
+    fontSize: Dimensions.get('window').width > 500 ? 20 : 16,
+  },
+  account: {
+    fontSize: Dimensions.get('window').width > 500 ? 14 : 12,
   },
 });
