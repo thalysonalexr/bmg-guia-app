@@ -1,12 +1,26 @@
+import { Dream, Topics } from '../models/Dream';
 import { UserAuth } from '../models/User';
-import { Dream } from '../models/Dream';
+
+export const authenticate = () =>
+  new Promise<UserAuth>((resolve) => resolve(require('../data/auth.json')));
 
 export const getAllDreamsService = () =>
   new Promise<{ dreams: Dream[] }>((resolve) =>
-    setTimeout(() => resolve(require('../data/dreams.json')), 200)
+    resolve(require('../data/dreams.json'))
   );
 
-export const authenticate = () =>
-  new Promise<UserAuth>((resolve) =>
-    setTimeout(() => resolve(require('../data/auth.json')), 200)
-  );
+export const getAllTopicsByDreamId = (id: string) =>
+  new Promise<Topics[] | undefined>((resolve) => {
+    const data: { dreams: Dream[] } = require('../data/dreams.json');
+    const topics = data.dreams.find((dream) => dream.id === id)?.topics;
+    resolve(topics);
+  });
+
+export const getTopicById = (id: string) =>
+  new Promise<Topics | undefined>((resolve) => {
+    const data: { dreams: Dream[] } = require('../data/dreams.json');
+    data.dreams.forEach((dream) => {
+      const topic = dream.topics.find((topic) => topic.id === id);
+      resolve(topic);
+    });
+  });

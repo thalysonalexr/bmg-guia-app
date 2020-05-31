@@ -1,4 +1,6 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
+
+export const fullSize = 440;
 
 export default StyleSheet.create({
   containerProgress: {
@@ -6,13 +8,7 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
   },
   progress: {
-    width: 45,
-    height: 35,
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  progressText: {
-    color: '#FCFCFC',
-    fontSize: 12,
   },
 });

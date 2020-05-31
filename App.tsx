@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './src/config/StatusBar';
 import './src/config/IgnoreWarnings';
 

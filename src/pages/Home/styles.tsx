@@ -1,21 +1,13 @@
-import { StyleSheet } from 'react-native';
-import Constants from 'expo-constants';
+import { StyleSheet, Dimensions } from 'react-native';
 
 export default StyleSheet.create({
-  backgroundImage: {
-    flex: 1,
-    width: '100%',
-    height: '100%',
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingTop: Constants.statusBarHeight + 20,
-  },
   container: {
     flex: 1,
     width: '100%',
     height: '100%',
     alignItems: 'center',
     justifyContent: 'center',
+    marginTop: Dimensions.get('window').width > 374 ? 75 : 62,
   },
   listDreams: {
     width: '100%',
