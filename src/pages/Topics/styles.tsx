@@ -1,4 +1,5 @@
 import { StyleSheet, Dimensions } from 'react-native';
+import { selectMarginTop } from '../Home/styles';
 
 export default StyleSheet.create({
   container: {
@@ -10,7 +11,7 @@ export default StyleSheet.create({
     marginHorizontal: 15,
     borderRadius: 20,
     overflow: 'hidden',
-    marginTop: Dimensions.get('window').width > 374 ? 75 : 62,
+    marginTop: selectMarginTop(Dimensions.get('window').width),
   },
   containerTopics: {
     flexDirection: 'row',

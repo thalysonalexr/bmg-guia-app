@@ -63,7 +63,6 @@ const Topics: React.FC = () => {
           </View>
           <Image
             source={require('../../../assets/gui.png')}
-            fadeDuration={1000}
             style={styles.mascot}
           />
         </View>

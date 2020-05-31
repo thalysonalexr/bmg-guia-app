@@ -22,7 +22,7 @@ const Card: React.FC<Props> = ({
   const [checked, setChecked] = useState('');
 
   const [fontsLoaded] = useFonts({
-    'Comfortaa-Bold': require('../../../../assets/fonts/Comfortaa-Bold.ttf'),
+    'Comfortaa-Regular': require('../../../../assets/fonts/Comfortaa-Regular.ttf'),
   });
 
   if (!fontsLoaded) {
@@ -43,7 +43,7 @@ const Card: React.FC<Props> = ({
               fnGetAnswers(questionId, correct);
             }}
           />
-          <Text style={[{ fontFamily: 'Comfortaa-Bold' }, styles.answer]}>
+          <Text style={[{ fontFamily: 'Comfortaa-Regular' }, styles.answer]}>
             {answer}
           </Text>
         </View>
