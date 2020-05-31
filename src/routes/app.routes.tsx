@@ -8,6 +8,8 @@ import {
 import Header from '../components/Header';
 
 import Home from '../pages/Home';
+import Analyze from '../pages/Analyze';
+import Dreams from '../pages/Dreams';
 import Topics from '../pages/Topics';
 import Subtopics from '../pages/Subtopics';
 import Learning from '../pages/Learning';
@@ -31,6 +33,8 @@ const AppRoutes: React.FC = () => {
         }}
       >
         <AppStack.Screen name="Home" component={Home} />
+        <AppStack.Screen name="Analyze" component={Analyze} />
+        <AppStack.Screen name="Dreams" component={Dreams} />
         <AppStack.Screen name="Topics" component={Topics} />
         <AppStack.Screen name="Subtopics" component={Subtopics} />
         <AppStack.Screen
