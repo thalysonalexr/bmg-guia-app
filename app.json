@@ -9,10 +9,14 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#F89D1B "
+      "backgroundColor": "#F89D1B"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
+    },
+    "android": {
+      "package": "com.bmgguia.bmgguia",
+      "versionCode": 1
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
