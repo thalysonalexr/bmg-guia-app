@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { View, FlatList } from 'react-native';
 
-import { View, ImageBackground, FlatList, Text } from 'react-native';
+import AppLayout from '../../layouts/AppLayout';
 
-import Header from '../../components/Header';
-import DreamCard from '../../components/DreamCard';
+import Card from './Card';
 
 import styles from './styles';
 
@@ -13,30 +13,28 @@ import { getAllDreamsService } from '../../services/api-core';
 const Home: React.FC = () => {
   const [dreams, setDreams] = useState<Dream[]>([]);
 
-  useEffect(() => {
-    async function handleLoadDreams() {
-      const { dreams } = await getAllDreamsService();
-      return dreams;
-    }
+  async function handleLoadDreams() {
+    const { dreams } = await getAllDreamsService();
+    return dreams;
+  }
 
+  useEffect(() => {
     handleLoadDreams().then((response) => setDreams(response));
-  });
+  }, []);
 
   return (
-    <ImageBackground
-      source={require('../../../assets/background.png')}
-      style={styles.backgroundImage}
-    >
+    <AppLayout>
       <View style={styles.container}>
-        <Header />
-        <FlatList
-          data={dreams}
-          style={styles.listDreams}
-          keyExtractor={(dream: Dream) => dream.id}
-          renderItem={({ item }) => <DreamCard data={item} />}
-        ></FlatList>
+        {dreams && (
+          <FlatList
+            data={dreams}
+            style={styles.listDreams}
+            keyExtractor={(dream: Dream) => dream.id}
+            renderItem={({ item }) => <Card data={item} />}
+          ></FlatList>
+        )}
       </View>
-    </ImageBackground>
+    </AppLayout>
   );
 };
 
