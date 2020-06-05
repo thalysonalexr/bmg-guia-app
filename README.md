@@ -32,13 +32,8 @@ Desenvolvemos a plataforma GUIA, uma seção no App Meu BMG responsável por ens
 <p align="center">
   <a href="https://github.com/thalysonalexr/bmg-guia-app">
     <img
-      src="./docs/running-1.gif"
-      width="200px;"
-      style="margin-right: 25px"
-      alt="BMG GUIA em execução no Android">
-    <img
-      src="./docs/running-2.gif"
-      width="200px;"
+      src="./docs/running.gif"
+      width="500px;"
       alt="BMG GUIA em execução no Android">
   </a>
 </p>
