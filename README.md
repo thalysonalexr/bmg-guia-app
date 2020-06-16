@@ -1,7 +1,6 @@
 # BMG GUIA - Gestão Unificada
 
-![GitHub version](https://img.shields.io/github/v/release/thalysonalexr/bmg-guia-app?color=%23F48222&include_prereleases)
-![Followme](https://img.shields.io/github/followers/thalysonalexr?label=follow%20me&logoColor=%23F48222&style=social)
+[![GitHub version](https://img.shields.io/github/v/release/thalysonalexr/bmg-guia-app?color=F48222&style=flat-square)](https://github.com/thalysonalexr/bmg-guia-app/releases)
 
 Aplicativo MVP desenvolvido com React Native para guiar usuários do app meu_MBG a investir, controlar e aprender sobre suas finanças.
 
@@ -10,7 +9,8 @@ Aplicativo MVP desenvolvido com React Native para guiar usuários do app meu_MBG
     <img
       src="./docs/mascot.png"
       width="300px;"
-      alt="Mascote desenvolvido por Manuela Luz (https://www.linkedin.com/in/manuela-luz-862797180/)" title="Mascote GUI">
+      alt="Mascote desenvolvido por Manuela Luz (https://www.linkedin.com/in/manuela-luz-862797180/)"
+      title="Mascote GUI">
   </a>
 </p>
 
@@ -21,9 +21,9 @@ Desenvolvemos a plataforma GUIA, uma seção no App Meu BMG responsável por ens
 <p align="center">
   <a href="https://github.com/thalysonalexr/bmg-guia-app">
     <img
-      src="./docs/screens.png"
+      src="./docs/screens.jpg"
       width="750px;"
-      alt="Logotipo desenvolvido por Manuela Luz (https://www.linkedin.com/in/manuela-luz-862797180/)" title="Logo JLS">
+      alt="Telas do aplicativo BMG GUIA" title="Telas do Aplicativo BMG GUIA">
   </a>
 </p>
 
@@ -58,7 +58,9 @@ Este projeto foi desenvolvido com a proposta de ser um produto mínimo viável (
 <table>
   <tr>
     <td align="center">
-      <a href="">
+      <a
+        href="https://www.linkedin.com/in/thalysonrodrigues/"
+        title="Thalyson Rodrigues in Linkedin">
         <img
           src="./docs/collaborators/thalyson.png"
           width="100px;"
@@ -69,7 +71,9 @@ Este projeto foi desenvolvido com a proposta de ser um produto mínimo viável (
       </a>
     </td>
     <td align="center">
-      <a href="">
+      <a
+        href="https://www.linkedin.com/in/jo%C3%A3o-kleber-g-448481bb/"
+        title="João Kléber in Linkedin">
         <img
           src="./docs/collaborators/joao.png"
           width="100px;"
@@ -80,7 +84,9 @@ Este projeto foi desenvolvido com a proposta de ser um produto mínimo viável (
       </a>
     </td>
     <td align="center">
-      <a href="">
+      <a
+        href="https://www.linkedin.com/in/manuela-luz-862797180/"
+        title="Manuela Luz in Linkedin">
         <img
           src="./docs/collaborators/manu.png"
           width="100px;"
@@ -91,7 +97,9 @@ Este projeto foi desenvolvido com a proposta de ser um produto mínimo viável (
       </a>
     </td>
     <td align="center">
-      <a href="">
+      <a
+        href="https://www.linkedin.com/in/paulo-victor-moreira-matehus-641b9514b/"
+        title="Paulo Victor in Linkedin">
         <img
           src="./docs/collaborators/paulo.jpeg" width="100px;"
           alt="Paulo Victor"/>
